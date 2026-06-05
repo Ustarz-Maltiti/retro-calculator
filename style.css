@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Oswald:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2b2b2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Oswald', sans-serif;
+}
+
+.calculator {
+  background: linear-gradient(145deg, #e8e0d0, #c9bfa8);
+  border-radius: 16px;
+  padding: 24px 20px;
+  width: 300px;
+  box-shadow: 
+    6px 6px 12px #a89f8c,
+    -3px -3px 8px #fff8ee,
+    inset 0 1px 0 #fff5e0;
+}
+
+.brand {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 4px;
+  color: #7a6a50;
+  margin-bottom: 14px;
+}
+
+.display {
+  background-color: #1a2a1a;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 18px;
+  text-align: right;
+  box-shadow: inset 3px 3px 8px #000, inset -1px -1px 4px #2a4a2a;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#result {
+  font-family: 'VT323', monospace;
+  font-size: 42px;
+  color: #7dff7d;
+  text-shadow: 0 0 8px #00ff00, 0 0 2px #00cc00;
+  letter-spacing: 2px;
+  word-break: break-all;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  background: linear-gradient(145deg, #d4c9b0, #b8ad96);
+  border: none;
+  border-radius: 8px;
+  padding: 16px 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #3a3020;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px #a89f8c, -2px -2px 4px #fff8ee;
+  transition: all 0.1s ease;
+}
+
+.btn:active {
+  box-shadow: inset 2px 2px 5px #a89f8c, inset -1px -1px 3px #fff8ee;
+  transform: translateY(2px);
+}
+
+.special {
+  color: #5a4a2a;
+  background: linear-gradient(145deg, #c8bc9c, #b0a480);
+}
+
+.operator {
+  color: #ffffff;
+  background: linear-gradient(145deg, #c07830, #a05820);
+  box-shadow: 3px 3px 6px #804010, -2px -2px 4px #e09050;
+}
+
+.operator:active {
+  box-shadow: inset 2px 2px 5px #603000, inset -1px -1px 3px #d08040;
+}
+
+.equals {
+  color: #ffffff;
+  background: linear-gradient(145deg, #c07830, #a05820);
+  box-shadow: 3px 3px 6px #804010, -2px -2px 4px #e09050;
+}
+
+.equals:active {
+  box-shadow: inset 2px 2px 5px #603000, inset -1px -1px 3px #d08040;
+}
+
+.zero {
+  grid-column: span 2;
+}
